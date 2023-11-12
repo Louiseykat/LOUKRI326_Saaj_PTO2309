@@ -59,8 +59,11 @@ a {
 /* ===== main ====== */
 
 main {
-
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    padding: 0.5rem 0;
 }
+
 
 .main-content {
     padding: 1.25rem;
@@ -82,6 +85,21 @@ main {
    
 
 /* ===== Category ===== */
+
+.categories {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0.5rem 0;
+}
+
+.row-span-2 {
+    grid-row: span 2;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
 
 .categories {
     text-align: center;
