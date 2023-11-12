@@ -91,15 +91,15 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0.5rem 0;
+    .row-span-2 {
+        grid-row: span 2;
+    }
+    
+    .col-span-2 {
+        grid-column: span 2;
+    }
 }
 
-.row-span-2 {
-    grid-row: span 2;
-}
-
-.col-span-2 {
-    grid-column: span 2;
-}
 
 .categories {
     text-align: center;
@@ -114,6 +114,16 @@ main {
 
     background-color: rgb(155, 100, 55);
     color: white;
+}
+
+.sponsors {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0.5rem 0;
+    .col-span-2 {
+        grid-column: span 2;
+    }
 }
 
 button {
